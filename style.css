@@ -1,10 +1,30 @@
-body {background-color: gainsboro;}
+body {background-color: #e8e5e5;
+    text-align: center;
+    ;
+}
 
-a {color: orange; font-size: 20px; font-family: 'Times New Roman', Times, serif;}
+.name {color: #587558; font-size: 50px;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    }
 
-p1 {color:darkseagreen; font-size: 50px; font-family:fantasy}
+.aboutMe{
+    text-align: center;
+}
 
-p2 {background-color: white; color: blue; font-size: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.download{
+    color: #1c591b; font-size: 20px;
+    font-family: 'Times New Roman', serif;
+}
+.linked{
+color: #1c591b; font-size: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+.image{
+    left: auto;
+    right: auto;
+}
 
 
 
