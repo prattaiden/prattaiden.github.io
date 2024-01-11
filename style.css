@@ -3,22 +3,62 @@ body {background-color: #e8e5e5;
     ;
 }
 
-.name {color: #587558; font-size: 50px;
-    font-family: "Times New Roman", serif;
+#name {color: #587558; font-size: 80px;
+    font-family: Helvetica, serif;
     text-align: center;
+    margin-top: 100px;
     }
 
+#aboutSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 50px 150px 200px;
+}
+
+#aboutWords{
+    text-align: left;
+}
+#running{
+    width: 512px;
+    height: 342px;
+}
+
+#about{
+    font-size: 50px;
+    color: deeppink;
+    font-family: Helvetica, serif;
+}
+
+#paragraphMe{
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+
+#portfolioSection{
+    margin-bottom: 60px;
+}
+
+#portfolio{
+    font-size: 50px;
+    color: deeppink;
+}
 .linksMe{
     text-align: center;
 }
 
+#contactSection{
+    margin-bottom: 100px;
+}
+
 .download{
     color: #1c591b; font-size: 20px;
-    font-family: 'Times New Roman', serif;
+    font-family: Helvetica, serif;
 }
 .linked{
 color: #1c591b; font-size: 20px;
-    font-family: 'Times New Roman', serif;
+    font-family: Helvetica, serif;
 }
 
 .image{
