@@ -1,71 +1,123 @@
-body {background-color: #e8e5e5;
+
+/*---------------------------------body-----------------------*/
+body {
+    background-color: #e8e5e5;
     text-align: center;
-    ;
 }
 
-#name {color: #587558; font-size: 80px;
+/*name*/
+#name{
+    color: black; font-size: 70px;
     font-family: Helvetica, serif;
     text-align: center;
-    margin-top: 100px;
-    }
+    border-bottom: 3px solid black;
+}
 
+#intro{
+    background-color: #587558;
+    border: 3px solid green;
+}
+
+/*--------------------------about---------------------*/
 #aboutSection{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 50px 150px 200px;
-}
-
-#aboutWords{
-    text-align: left;
-}
-#running{
-    width: 512px;
-    height: 342px;
-}
-
-#about{
-    font-size: 50px;
-    color: deeppink;
-    font-family: Helvetica, serif;
+    margin: 50px 150px 20px;
 }
 
 #paragraphMe{
     font-size: 20px;
-    color: cornflowerblue;
+    font-family: Helvetica, serif;
+    color: black;
+    margin-right: 50px;
 }
 
-
-#portfolioSection{
-    margin-bottom: 60px;
-}
-
-#portfolio{
-    font-size: 50px;
-    color: deeppink;
-}
-.linksMe{
+#aboutWords{
     text-align: center;
 }
 
+#running{
+    width: 512px;
+    height: 342px;
+    border: 2px solid black;
+}
+
+
+/*----------------------portfolio section-----------------------*/
+#portfolio{
+    font-family: Helvetica, serif;
+    font-size: 50px;
+    color: #587558;
+}
+
+/*div containing the images and links*/
+#linksMe{
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/*tri label*/
+#triCalc,
+#mazeSolver{
+    color: black;
+    font-size: 20px;
+    font-family: Helvetica, serif;
+    text-align: center;
+}
+
+
+#myExtension,
+#myPuzzle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#extensionImage,
+#puzzleImage{
+    width: 200px;
+    height: 190px;
+    margin: 10px;
+}
+
+#myExtension:hover .BW,
+#myPuzzle:hover .BW{
+    filter: none;
+    transition: filter 0.3s;
+}
+
+.BW{
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+/*---------------------about--------------------*/
 #contactSection{
     margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.download{
-    color: #1c591b; font-size: 20px;
+#contact{
     font-family: Helvetica, serif;
-}
-.linked{
-color: #1c591b; font-size: 20px;
-    font-family: Helvetica, serif;
+    font-size: 30px;
+    color: #587558;
 }
 
-.image{
-    left: auto;
-    right: auto;
+#linkedInImage, #stravaImage{
+    width: 40px;
+    height: 40px;
 }
 
-
-
+#linkedIn, #myStrava{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: inline-block;
+}
 

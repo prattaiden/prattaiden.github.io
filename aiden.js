@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     myExtension.addEventListener("click", newTab);
+
     myPort.addEventListener("click", newTab);
     myStrava.addEventListener("click", newTab);
 
