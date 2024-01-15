@@ -1,21 +1,21 @@
 
 /*---------------------------------body-----------------------*/
 body {
-    background-color: #e8e5e5;
+    background-color: #4F3824;
     text-align: center;
 }
 
 /*name*/
-#name{
-    color: black; font-size: 70px;
+#name {
+    color: #D1603D;
+    font-size: 70px;
     font-family: Helvetica, serif;
     text-align: center;
-    border-bottom: 3px solid black;
 }
 
+
 #intro{
-    background-color: #587558;
-    border: 3px solid green;
+    margin-top: 100px;
 }
 
 /*--------------------------about---------------------*/
@@ -29,7 +29,7 @@ body {
 #paragraphMe{
     font-size: 20px;
     font-family: Helvetica, serif;
-    color: black;
+    color: #DDB967;
     margin-right: 50px;
 }
 
@@ -48,7 +48,7 @@ body {
 #portfolio{
     font-family: Helvetica, serif;
     font-size: 50px;
-    color: #587558;
+    color: #D1603D;
 }
 
 /*div containing the images and links*/
@@ -63,7 +63,7 @@ body {
 /*tri label*/
 #triCalc,
 #mazeSolver{
-    color: black;
+    color: #DDB967;
     font-size: 20px;
     font-family: Helvetica, serif;
     text-align: center;
@@ -106,7 +106,12 @@ body {
 #contact{
     font-family: Helvetica, serif;
     font-size: 30px;
-    color: #587558;
+    color: #D1603D;
+}
+
+#email{
+    color: #DDB967;
+    font-family: Helvetica, serif;
 }
 
 #linkedInImage, #stravaImage{
