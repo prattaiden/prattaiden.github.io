@@ -31,6 +31,7 @@ body {
     font-family: Helvetica, serif;
     color: #DDB967;
     margin-right: 50px;
+    margin-bottom: 10px;
 }
 
 #aboutWords{
@@ -40,7 +41,7 @@ body {
 #running{
     width: 512px;
     height: 342px;
-    border: 2px solid black;
+    border: 4px solid black;
 }
 
 
@@ -62,7 +63,8 @@ body {
 
 /*tri label*/
 #triCalc,
-#mazeSolver{
+#mazeSolver,
+#Synthesizer{
     color: #DDB967;
     font-size: 20px;
     font-family: Helvetica, serif;
@@ -71,21 +73,24 @@ body {
 
 
 #myExtension,
-#myPuzzle{
+#myPuzzle,
+#mySynthesizer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #extensionImage,
-#puzzleImage{
+#puzzleImage,
+#synthImage {
     width: 200px;
     height: 190px;
     margin: 10px;
 }
 
 #myExtension:hover .BW,
-#myPuzzle:hover .BW{
+#myPuzzle:hover .BW,
+#mySynthesizer:hover .BW{
     filter: none;
     transition: filter 0.3s;
 }
