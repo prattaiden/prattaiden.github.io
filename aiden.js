@@ -114,9 +114,8 @@ document.addEventListener("DOMContentLoaded", function() {
         popup.style.position = "absolute";
         popup.style.top = buttonTop - 40 + "px"; // Adjust as needed
         popup.style.left = buttonRect.left + "px";
-        popup.style.backgroundColor = "#ea651b";
-        popup.style.color = "#ffffff";
-        popup.style.padding = "10px";
+        popup.style.color = "#ea651b";
+        popup.style.padding = "5px";
         popup.style.borderRadius = "5px";
         popup.style.zIndex = "9999";
         document.body.appendChild(popup);

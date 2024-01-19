@@ -40,11 +40,12 @@ body {
     align-content: center;
     color: white;
     cursor: pointer;
-    margin: 10px;
+    margin: 5px;
     font-family: Helvetica, serif;
 }
 
 #closeAbout{
+    background-color: #3a3838;
     color: #ea651b;
     cursor: pointer;
 }
@@ -52,7 +53,7 @@ body {
 #email{
     color: #ffffff;
     font-family: Helvetica, serif;
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
 }
 
@@ -90,7 +91,7 @@ body {
 #running{
     width: 512px;
     height: 342px;
-    border: 4px solid #ffffff;
+    border: 2px solid #ea651b;
     align-content: center;
 }
 
