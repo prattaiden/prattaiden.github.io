@@ -1,6 +1,21 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
+
+    //projects
+    function toggleMouseOverProject(image, label, isVis, isColor) {
+        label.style.visibility = isVis ? 'visible' : 'hidden';
+        label.style.transition = 'transform 0.3s ease-in-out';
+        image.style.transform = isVis ? 'scale(1.1)' : 'scale(1)';
+        image.style.transition = 'transform 0.3s ease-in-out';
+        image.style.border = isVis ? '2px solid #ea651b' : 'hidden';
+        if(isColor){
+            image.classList.add('BW');
+        }else{
+            image.classList.remove('BW');
+        }
+    }
+
     //tri elements
     let myExtensionIMG = document.getElementById("extensionImage");
     let triCalcLabel = document.getElementById("triCalc");
@@ -13,24 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let mySynthIMG = document.getElementById("synthImage");
     let synthLabel = document.getElementById("Synthesizer");
 
-
-    //links
-    let strava = document.getElementById("stravaImage");
-    let linkedIn = document.getElementById("linkedInImage");
-
-    strava.addEventListener("mouseover", function (){
-        toggleColor(strava, false);
-    });
-    strava.addEventListener("mouseout", function (){
-        toggleColor(strava, true);
-    });
-
-    linkedIn.addEventListener("mouseover", function (){
-        toggleColor(linkedIn, false);
-    });
-    linkedIn.addEventListener("mouseout", function (){
-        toggleColor(linkedIn, true);
-    });
 
     myExtensionIMG.addEventListener("mouseover", function (){
         toggleMouseOverProject(myExtensionIMG, triCalcLabel, true, false);
@@ -56,19 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleMouseOverProject(mySynthIMG, synthLabel, false, true);
     });
 
-
-    function toggleMouseOverProject(image, label, isVis, isColor) {
-        label.style.visibility = isVis ? 'visible' : 'hidden';
-        label.style.transition = 'transform 0.3s ease-in-out';
-        image.style.transform = isVis ? 'scale(1.1)' : 'scale(1)';
-        image.style.transition = 'transform 0.3s ease-in-out';
-        if(isColor){
-            image.classList.add('BW');
-        }else{
-            image.classList.remove('BW');
-        }
-    }
-
+    //color
     function toggleColor(image, isColor){
         if(isColor){
             image.classList.add('BW');
@@ -76,6 +61,25 @@ document.addEventListener("DOMContentLoaded", function() {
             image.classList.remove('BW');
         }
     }
+
+    //links
+    let strava = document.getElementById("stravaImage");
+    let linkedIn = document.getElementById("linkedInImage");
+
+    strava.addEventListener("mouseover", function (){
+        toggleColor(strava, false);
+    });
+    strava.addEventListener("mouseout", function (){
+        toggleColor(strava, true);
+    });
+
+    linkedIn.addEventListener("mouseover", function (){
+        toggleColor(linkedIn, false);
+    });
+    linkedIn.addEventListener("mouseout", function (){
+        toggleColor(linkedIn, true);
+    });
+
 
 
     //about
@@ -92,6 +96,24 @@ document.addEventListener("DOMContentLoaded", function() {
         aboutSection.style.display = 'none';
     });
 
+
+    contact.addEventListener('mouseover', function (){
+        contact.style.color = "#ea651b";
+    });
+
+    contact.addEventListener('mouseout', function (){
+        contact.style.color = "#ffffff";
+    });
+
+    aboutButton.addEventListener('mouseover', function (){
+        aboutButton.style.color = "#ea651b";
+    });
+
+    aboutButton.addEventListener('mouseout', function (){
+        aboutButton.style.color = "#ffffff";
+    });
+
+    //popup for email copying
     contact.addEventListener('click', function (event) {
         // Retrieve the email from the data attribute
         let emailText = contact.getAttribute("data-email");
@@ -116,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function() {
         popup.style.left = buttonRect.left + "px";
         popup.style.color = "#ea651b";
         popup.style.padding = "5px";
-        popup.style.borderRadius = "5px";
         popup.style.zIndex = "9999";
         document.body.appendChild(popup);
 

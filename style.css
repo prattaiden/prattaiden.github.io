@@ -1,9 +1,9 @@
 
 /*---------------------------------body-----------------------*/
 body {
-    background: linear-gradient(to right, #000000 0%, #3a3838 50%, #000000 100%);
+    background: linear-gradient(to right, #000000 0%, #282727 50%, #000000 100%);
     text-align: center;
-    margin: 100px 350px 200px;
+    margin: 100px 375px 200px;
 }
 
 #topHeader{
@@ -15,12 +15,12 @@ body {
 #name {
     color: #ffffff;
     font-size: 40px;
-    font-family: Helvetica, serif;
+    font-family: "Roboto Light", serif;
 }
 #desc{
     color: #ffffff;
     font-size: 10px;
-    font-family: Helvetica, serif;
+    font-family: "Roboto Light", serif;
     margin-top: 27px;
 }
 
@@ -30,7 +30,6 @@ body {
     flex-direction: row;
 }
 
-/*---------------------about--------------------*/
 #contactSection{
     display: flex;
     align-items: flex-end;
@@ -41,19 +40,13 @@ body {
     color: white;
     cursor: pointer;
     margin: 5px;
-    font-family: Helvetica, serif;
-}
-
-#closeAbout{
-    background-color: #3a3838;
-    color: #ea651b;
-    cursor: pointer;
+    font-family: "Roboto Light", serif;
 }
 
 #email{
     color: #ffffff;
-    font-family: Helvetica, serif;
-    margin: 5px;
+    font-family: "Roboto Light", serif;
+    margin: 5px 2px 5px;
     cursor: pointer;
 }
 
@@ -68,17 +61,24 @@ body {
     margin: 5px;
     display: inline-block;
 }
-/*--------------------------about---------------------*/
+
+/*---------------------about--------------------*/
 #aboutSection{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 40px 20px 20px;
+}
+
+#closeAbout{
+    background-color: #3a3838;
+    color: #ea651b;
+    cursor: pointer;
 }
 
 #paragraphMe{
     font-size: 20px;
-    font-family: Helvetica, serif;
+    font-family: "Roboto Light", serif;
     color: #ffffff;
     margin-right: 50px;
     margin-bottom: 10px;
@@ -91,7 +91,7 @@ body {
 #running{
     width: 512px;
     height: 342px;
-    border: 2px solid #ea651b;
+    border: 3px solid #ea651b;
     align-content: center;
 }
 
@@ -113,7 +113,7 @@ body {
 #Synthesizer{
     color: #ea651b;
     font-size: 20px;
-    font-family: Helvetica, serif;
+    font-family: "Roboto Light", serif;
     text-align: center;
     visibility: hidden;
 }
@@ -132,7 +132,8 @@ body {
 #synthImage {
     width: 200px;
     height: 190px;
-    margin: 10px;
+    margin: 20px 15px 20px;
+    transform-origin: center center;
 }
 
 
