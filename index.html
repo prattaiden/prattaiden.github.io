@@ -2,26 +2,41 @@
 <meta charset="UTF-8">
  <head>
  <link rel="stylesheet" type="text/css" href="style.css">
- <title>Aiden Pratt's Site</title>
+ <title>Aiden Pratt</title>
 
  </head>
 
 <body>
-<div id = "intro">
-    <header id = "name">AIDEN PRATT</header>
-    <div id = "aboutSection">
-        <div id = "aboutWords">
+<!--<div id = "centerP">-->
+    <div id = "topHeader">
+        <div id = "intro">
+            <header id = "name">AIDEN PRATT</header>
+            <p id = "desc">SOFTWARE ENGINEER</p>
+        </div>
+        <div id = "contactSection">
+            <a id = "linkedIn" href = "https://www.linkedin.com/in/aiden-pratt-569b54171/"target="_blank">
+                <img id = "linkedInImage" class = "BW" src = "images/linkedin-image.JPG" alt="linkedIn">
+            </a>
+            <a id = "myStrava" href="https://www.strava.com/athletes/32689106"target="_blank">
+                <img id = "stravaImage" class = "BW" src = "images/strava-image.JPG" alt = "myStrava">
+            </a>
+            <p id = "aboutButton">about</p>
+            <p id = "email" data-email="prattaiden8@gmail.com">contact</p>
+        </div>
+    </div>
+
+<div id = "aboutSection" style="display: none">
+    <button id="closeAbout">X</button>
+    <div id = "aboutWords">
         <p id = "paragraphMe">I am currently pursuing a master’s degree in Software Development at The University of Utah, seeking to leverage this expertise alongside my bachelor's degree in Biology and prior research-based roles. My background includes dedicated work in molecular biology laboratories, focusing on process improvement and pioneering research.
 
             Embarking on this new venture in software development, I approach it with enthusiasm and a dedicated commitment to achieving new goals. Proficient in a range of coding languages such as C++, C, Java, JavaScript, HTML, and Android Studio, I continuously thrive on learning, recognizing the perpetual opportunities for self-improvement and skill enhancement.
 
             Beyond coding, I am passionate about swimming, biking, running, and engaging in high-level competition across various races.</p>
-        </div>
-        <img id = "running" class = "image" src="images/aidenrun.JPG" alt="">
     </div>
+    <img id = "running" class = "image" src="images/aidenrun.JPG" alt="">
 </div>
 
-<p id = "portfolio">My Projects</p>
     <div id = "linksMe">
         <div>
             <label id = "triCalc">Triathlon Calculator</label>
@@ -41,24 +56,11 @@
                 <img id = "synthImage" class = "BW" src = "images/synth-image.JPG" alt = "my Synthesizer">
             </a>
         </div>
-
-
     </div>
 
-<label id = "contact">CONTACT</label>
-<p id = "email">prattaiden8@gmail.com</p>
-    <div id = "contactSection">
-        <a id = "linkedIn" href = "https://www.linkedin.com/in/aiden-pratt-569b54171/"target="_blank">
-            <img id = "linkedInImage" src = "images/linkedin-image.JPG" alt="linkedIn">
-        </a>
-
-        <a id = "myStrava" href="https://www.strava.com/athletes/32689106"target="_blank">
-            <img id = "stravaImage" src = "images/strava-image.JPG" alt = "myStrava">
-        </a>
-
-    </div>
 
 <script defer type = "text/javascript" src="aiden.js"></script>
+
 </body>
 
 </html>

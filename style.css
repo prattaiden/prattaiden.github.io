@@ -1,35 +1,84 @@
 
 /*---------------------------------body-----------------------*/
 body {
-    background-color: #4F3824;
+    background: linear-gradient(to right, #000000 0%, #3a3838 50%, #000000 100%);
     text-align: center;
+    margin: 100px 350px 200px;
 }
 
+#topHeader{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
 /*name*/
 #name {
-    color: #D1603D;
-    font-size: 70px;
+    color: #ffffff;
+    font-size: 40px;
     font-family: Helvetica, serif;
-    text-align: center;
 }
-
+#desc{
+    color: #ffffff;
+    font-size: 10px;
+    font-family: Helvetica, serif;
+    margin-top: 27px;
+}
 
 #intro{
-    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
+/*---------------------about--------------------*/
+#contactSection{
+    display: flex;
+    align-items: flex-end;
+}
+
+#aboutButton{
+    align-content: center;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    font-family: Helvetica, serif;
+}
+
+#closeAbout{
+    color: #ea651b;
+    cursor: pointer;
+}
+
+#email{
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#linkedInImage, #stravaImage{
+    width: 20px;
+    height: 20px;
+}
+
+#linkedIn, #myStrava{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    display: inline-block;
+}
 /*--------------------------about---------------------*/
 #aboutSection{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 50px 150px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 #paragraphMe{
     font-size: 20px;
     font-family: Helvetica, serif;
-    color: #DDB967;
+    color: #ffffff;
     margin-right: 50px;
     margin-bottom: 10px;
 }
@@ -41,20 +90,16 @@ body {
 #running{
     width: 512px;
     height: 342px;
-    border: 4px solid black;
+    border: 4px solid #ffffff;
+    align-content: center;
 }
 
 
 /*----------------------portfolio section-----------------------*/
-#portfolio{
-    font-family: Helvetica, serif;
-    font-size: 50px;
-    color: #D1603D;
-}
 
 /*div containing the images and links*/
 #linksMe{
-    margin-bottom: 60px;
+    margin: 100px 100px 100px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -65,10 +110,11 @@ body {
 #triCalc,
 #mazeSolver,
 #Synthesizer{
-    color: #DDB967;
+    color: #ea651b;
     font-size: 20px;
     font-family: Helvetica, serif;
     text-align: center;
+    visibility: hidden;
 }
 
 
@@ -88,46 +134,7 @@ body {
     margin: 10px;
 }
 
-#myExtension:hover .BW,
-#myPuzzle:hover .BW,
-#mySynthesizer:hover .BW{
-    filter: none;
-    transition: filter 0.3s;
-}
 
-.BW{
+.BW {
     filter: grayscale(100%);
-    transition: filter 0.3s;
 }
-
-/*---------------------about--------------------*/
-#contactSection{
-    margin-bottom: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact{
-    font-family: Helvetica, serif;
-    font-size: 30px;
-    color: #D1603D;
-}
-
-#email{
-    color: #DDB967;
-    font-family: Helvetica, serif;
-}
-
-#linkedInImage, #stravaImage{
-    width: 40px;
-    height: 40px;
-}
-
-#linkedIn, #myStrava{
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    display: inline-block;
-}
-
