@@ -28,6 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
     let mySynthIMG = document.getElementById("synthImage");
     let synthLabel = document.getElementById("Synthesizer");
 
+    //server
+    let myServerIMG = document.getElementById("serverImage");
+    let serverLabel = document.getElementById("Server");
+
+    //chat android
+    let androidIMG = document.getElementById("androidImage");
+    let androidLabel = document.getElementById("Android");
+
 
     myExtensionIMG.addEventListener("mouseover", function (){
         toggleMouseOverProject(myExtensionIMG, triCalcLabel, true, false);
@@ -52,6 +60,25 @@ document.addEventListener("DOMContentLoaded", function() {
     mySynthIMG.addEventListener("mouseout", function (){
         toggleMouseOverProject(mySynthIMG, synthLabel, false, true);
     });
+
+    myServerIMG.addEventListener("mouseover", function (){
+        toggleMouseOverProject(myServerIMG, serverLabel, true, false);
+    });
+
+    myServerIMG.addEventListener("mouseout", function (){
+        toggleMouseOverProject(myServerIMG, serverLabel, false, true);
+    });
+
+    androidIMG.addEventListener("mouseover", function (){
+        toggleMouseOverProject(androidIMG, androidLabel, true, false);
+    });
+
+    androidIMG.addEventListener("mouseout", function (){
+        toggleMouseOverProject(androidIMG, androidLabel, false, true);
+    });
+
+
+
 
     //color
     function toggleColor(image, isColor){
