@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let androidIMG = document.getElementById("androidImage");
     let androidLabel = document.getElementById("Android");
 
+    //housing python
+    let housing_data_image = document.getElementById("housing_data_image");
+    let housing_label = document.getElementById("House")
+
 
     myExtensionIMG.addEventListener("mouseover", function (){
         toggleMouseOverProject(myExtensionIMG, triCalcLabel, true, false);
@@ -77,7 +81,13 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleMouseOverProject(androidIMG, androidLabel, false, true);
     });
 
+    housing_data_image.addEventListener("mouseover", function (){
+        toggleMouseOverProject(housing_data_image, housing_label, true, false);
+    });
 
+    housing_data_image.addEventListener("mouseout", function (){
+        toggleMouseOverProject(housing_data_image, housing_label, false, true);
+    });
 
 
     //color
