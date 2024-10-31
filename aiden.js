@@ -40,6 +40,15 @@ document.addEventListener("DOMContentLoaded", function() {
     let housing_data_image = document.getElementById("housing_data_image");
     let housing_label = document.getElementById("House")
 
+    //datastructures
+    let data_image = document.getElementById("datastructures_image");
+    let data_label = document.getElementById("DLang")
+
+    //chars classification
+    let chars_image = document.getElementById("chars_image");
+    let chars_label = document.getElementById("PyTorch")
+
+
 
     myExtensionIMG.addEventListener("mouseover", function (){
         toggleMouseOverProject(myExtensionIMG, triCalcLabel, true, false);
@@ -88,6 +97,24 @@ document.addEventListener("DOMContentLoaded", function() {
     housing_data_image.addEventListener("mouseout", function (){
         toggleMouseOverProject(housing_data_image, housing_label, false, true);
     });
+
+    data_image.addEventListener("mouseover", function (){
+        toggleMouseOverProject(data_image, data_label, true, false);
+    });
+
+    data_image.addEventListener("mouseout", function (){
+        toggleMouseOverProject(data_image, data_label, false, true);
+    });
+
+
+    chars_image.addEventListener("mouseover", function (){
+        toggleMouseOverProject(chars_image, chars_label, true, false);
+    });
+
+    chars_image.addEventListener("mouseout", function (){
+        toggleMouseOverProject(chars_image, chars_label, false, true);
+    });
+
 
 
     //color

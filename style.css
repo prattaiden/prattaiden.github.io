@@ -127,7 +127,10 @@ body {
 #mazeSolver,
 #Synthesizer,
 #Server,
-#Android{
+#Android,
+#House,
+#Dlang,
+#PyTorch{
     color: #ea651b;
     font-size: 20px;
     font-family: "Roboto Light", serif;
@@ -140,7 +143,10 @@ body {
 #myPuzzle,
 #mySynthesizer,
 #myAndroid,
-#myServer{
+#myServer,
+#House,
+#Dlang,
+#PyTorch{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +158,9 @@ body {
 #synthImage,
 #androidImage,
 #serverImage,
-#housing_data_image{
+#housing_data_image,
+#datastructures_image,
+#chars_image{
     width: 200px;
     height: 190px;
     margin: 20px 15px 20px;
