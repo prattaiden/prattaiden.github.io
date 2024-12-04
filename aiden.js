@@ -38,15 +38,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //housing python
     let housing_data_image = document.getElementById("housing_data_image");
-    let housing_label = document.getElementById("House")
+    let housing_label = document.getElementById("House");
 
     //datastructures
     let data_image = document.getElementById("datastructures_image");
-    let data_label = document.getElementById("DLang")
+    let data_label = document.getElementById("DLang");
 
     //chars classification
     let chars_image = document.getElementById("chars_image");
-    let chars_label = document.getElementById("PyTorch")
+    let chars_label = document.getElementById("PyTorch");
+
+    //LMS
+    let lms_image = document.getElementById("lms_image");
+    let lms_label = document.getElementById("LMS");
 
 
 
@@ -113,6 +117,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     chars_image.addEventListener("mouseout", function (){
         toggleMouseOverProject(chars_image, chars_label, false, true);
+    });
+
+    lms_image.addEventListener("mouseover", function (){
+        toggleMouseOverProject(lms_image, lms_label, true, false);
+    });
+
+    lms_image.addEventListener("mouseout", function (){
+        toggleMouseOverProject(lms_image, lms_label, false, true);
     });
 
 

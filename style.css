@@ -130,7 +130,8 @@ body {
 #Android,
 #House,
 #Dlang,
-#PyTorch{
+#PyTorch,
+#LMS{
     color: #ea651b;
     font-size: 20px;
     font-family: "Roboto Light", serif;
@@ -146,7 +147,8 @@ body {
 #myServer,
 #House,
 #Dlang,
-#PyTorch{
+#PyTorch,
+#LMS{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +162,8 @@ body {
 #serverImage,
 #housing_data_image,
 #datastructures_image,
-#chars_image{
+#chars_image,
+#lms_image{
     width: 200px;
     height: 190px;
     margin: 20px 15px 20px;
